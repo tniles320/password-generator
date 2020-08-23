@@ -17,19 +17,25 @@
         <div class="password-container">
             <span id="password"></span>
         </div>
-        <form class="pass-length">
-            <input type="number" id="password-length" placeholder="Please enter length of desired password (8-128 characters)">
+        <!--form to input length of password, prevents "enter" from reloading page-->
+        <form class="pass-length" onkeypress="return event.keyCode != 13">
+            <input type="number" id="password-length" placeholder="Enter a number 8-128">
         </form>
+        <!--label above checkboxes-->
+        <label for="password-length" id="pl-label">Default password has lowercase letters</label>
         <!--checkboxes-->
         <div class="check-boxes">
+            <!--uppercase checkbox-->
             <div class="upper">
               <input type="checkbox" id="uppercase" name="uppercase" value="uppercase">
               <label for="uppercase">Uppercase letters</label><br>
             </div>
+            <!--number checkbox-->
             <div class="num">
               <input type="checkbox" id="numbers" name="numbers" value="numbers">
               <label for="numbers">Numbers</label><br>
             </div>
+            <!--symbol checkbox-->
             <div class="sym">
               <input type="checkbox" id="symbols" name="symbols" value="symbols">
               <label for="characters">Symbols</label><br>
