@@ -53,7 +53,7 @@ passBtn.addEventListener('click', function() {
         function numGenerate(length) {
             if (checkNums == true) {
             var numResult = '';
-            var numbers = '0123456789';
+            var numbers = '01234567890123456789';
             var numLength = numbers.length;
             for ( var i = 0; i < length; i++ ) {
             numResult += numbers.charAt(Math.floor(Math.random() * numLength));
