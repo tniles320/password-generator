@@ -17,8 +17,8 @@ This application will generate a password containing
 
 ### Small issue with the code
 Unfortunately the way the javascript is coded, there is a small chance that the randomly
-generated password will exclude one or more of the checked characters. This is do to length
-string increasing for each extra character that is checked.<br><br>
+generated password will exclude one or more of the checked characters. This is do to the length
+of the string increasing for each extra character that is checked.<br><br>
 Ex: If the password length is 8 and no boxes are checked, the string created will have 8
 lowercase letters. If the Uppercase letters box is checked the string created will contain 16 characters, but the function will still only pull 8 characters from the string. So it is possible that the 8 characters pulled
 will only include uppercase or lowercase letters. This becomes less likely as the password length is increased
